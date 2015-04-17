@@ -70,9 +70,10 @@ public class MainActivity extends ActionBarActivity implements GameFragment.OnCo
     public void onTwenty(long t) {
             this.t=t;
 
-        Result_Fragment f1 = new Result_Fragment();
+//        Result_Fragment f1 = new Result_Fragment();
+        Result_Fragment result_fragment = Result_Fragment.newInstance(t);
         getSupportFragmentManager().beginTransaction()
-        .replace(R.id.game, f1).addToBackStack(null).commit(); //  FrameLayout container
+        .replace(R.id.game, result_fragment).addToBackStack(null).commit(); //  FrameLayout container
 //            ft.setTransition(android.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
            // ft.addToBackStack(null);
            // ft.commit();
