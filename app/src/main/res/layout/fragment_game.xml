@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deepika.click_fragment.GameFragment"
+    android:id="@+id/gameFrame">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Start"
+        android:id="@+id/start"
+        android:layout_gravity="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px"
+        android:id="@+id/noOfClicks"
+        android:text="0"
+        android:layout_gravity="end"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click the button 20 times as fast as you can!"
+        android:id="@+id/title"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textSize="12dp" />
+
+</FrameLayout>
